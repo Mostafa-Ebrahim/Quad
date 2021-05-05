@@ -1,2 +1,2 @@
 # Quad-Website
-Static website for photo sharing
+Quad is a responsive website for sharing photos
