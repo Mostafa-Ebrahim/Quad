@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  background: #f2f2f2;
+  margin: 1em;
+  font-family: 'Poppins';
+}
+
+
+.navbar{
+  display: flex;
+  padding-top: 25px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.logo{
+  width: fit-content;
+  height: fit-content;
+  align-items: baseline;
+}
+
+.search{
+  width: 50em;
+  height: fit-content;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  background: #ffffff;
+  margin: .5em;
+  padding-left: 1em;
+  font-size: 10px;
+  font-weight: bold;
+  color: #676767;
+}
+
+.upload{
+  width: fit-content;
+  height: fit-content;
+  margin: .5em;
+  padding: 0 1em 0 1em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  background: #003ecb;
+  align-self: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.user{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4px;
+  margin: 0.5em;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  align-items: center;
+  max-width: 30%;
+  padding: 4px;
+  margin-inline: 0.25em;
+}
+
+.column img {
+  border-radius: 0.5em;
+  margin-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 90%;
+  }
+  .search{
+    flex: 100%;
+    max-width: 90%;
+  }
+}
+
+a {
+  color: #444444;
+}
