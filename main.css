@@ -1,38 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 body {
-  background: #f2f2f2;
-  font-family: 'Poppins';
+  background: #f8f8f8;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar{
   display: flex;
-  padding-top: 1em;
-  flex-direction: row;
+  background: white;
   justify-content: space-evenly;
   align-items: center;
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  font-weight: bold;
+  font-size: 11pt;
 }
 
-.logo{
-  
+ul.list {        
+    display: flex;
+    align-items: center;
+    
+}
+
+ul.list li {
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
 .navbar input[type=text] {
-  width: 100%;
+  width: 80%;
   height: 1.2em;
-  border: none;
   outline: none;
-  box-shadow: 0.15em 0.15em #003ecb;
+  /* box-shadow: 0.15em 0.15em #003ecb; */
+  border: 0.10em solid #003ecb;
+  background: #f8f8f8;
   text-decoration: solid;
   border-radius: 0.5em;
-  font-family: 'Poppins';
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
   font-weight: bold;
-  color: #676767;
-  margin: .5em;
-  padding-right: 1em;
-  padding-left: 1.75em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  color: #222222;
+  padding: 2px 1em 0.2em 1.75em;
   background-image: url(Assets/search.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -40,51 +48,72 @@ body {
 }
 
 .upload{
-  display: inline-block;
   width: fit-content;
-  height: 1.6em;
-  margin: .5em;
-  padding: 0 1em 0 1em;
+  height: 1.8em;
+  padding: 0.2em 1em 0.2em 1em;
   box-sizing: border-box;
   border-radius: 0.5em;
   background: #003ecb;
   align-self: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   cursor: pointer;
+  vertical-align: middle; 
+}
+
+.footer{
+  display: flex;
+  background: #003ecb;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2em;
+  color: white;
+  font-size: 9pt;
+  font-weight: lighter;
+  /* min-width: max-content; */
+}
+
+ul.foolist {        
+  display: flex;
+  align-items: center;
+  
+}
+
+ul.foolist li {
+  justify-content: space-evenly;
+  margin: 10px;
+  margin-right: 65px;
 }
 
 .user{
   position: relative;
-  width: 45px;
-  height: 45px;
-  overflow: hidden;
-  border-radius: 50%;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  overflow: visible;
 }
 
 .user img {
+  border-radius: 50%;
   width: 100%;
   height: auto;
-}
-
-ul{
-  list-style-type: none;
+  vertical-align: middle;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 4px;
-  margin: 0.5em;
+  margin: 1.5em;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   align-items: center;
-  max-width: 30%;
+  max-width: 50%;
   padding: 4px;
   margin-inline: 0.25em;
 }
@@ -96,6 +125,7 @@ ul{
   width: 100%;
 }
 
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .column {
@@ -104,10 +134,61 @@ ul{
   }
   .search{
     flex: 100%;
+    max-width: 20%;
+    margin-right: 40px;
+    font-size: 5pt;
+  }
+  .navbar{
+    font-size: 8pt;
+    font-weight: bold;
+    
+  }
+  .upload{
+    font-size: 8pt;
+    font-weight: bold;
+  }
+  .navbar input[type=text] {
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 2px 1em 0.2em 2em;
+  }
+  ul.list {        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  ul.list li {
+    justify-content: space-evenly;
+    margin: 8px;
+}
+  ul.foolist {        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  ul.foolist li {
+    justify-content: space-evenly;
+    margin: 8px;
+    margin-right: 10px;
+  }
+  .user img {
+    flex: 100%;
     max-width: 90%;
   }
 }
 
 a {
-  color: #444444;
+  color: #222222;
+}
+a:hover{
+  color: #003ecb;
+}
+
+a.f{
+  color: white;
+}
+a:hover.f{
+  color: orange;
 }
