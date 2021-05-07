@@ -48,7 +48,7 @@ ul.list li {
 }
 
 .navbar input[type=text]:focus {
-border: 0.1em solid #003ecb;
+  border: 0.1em solid #003ecb;
 }
 
 .upload{
@@ -74,8 +74,7 @@ border: 0.1em solid #003ecb;
   margin-top: 2em;
   color: white;
   font-size: 9pt;
-  font-weight: lighter;
-  /* min-width: max-content; */
+  font-weight: bold;
 }
 
 ul.foolist {        
@@ -87,15 +86,15 @@ ul.foolist {
 ul.foolist li {
   justify-content: space-evenly;
   margin: 10px;
-  margin-right: 65px;
+  margin-inline: 35px;
 }
 
 .user{
   position: relative;
-  align-self: center;
   width: 30px;
   height: 30px;
   overflow: visible;
+  margin-right: 5px;
 }
 
 .user img {
@@ -105,12 +104,78 @@ ul.foolist li {
   vertical-align: middle;
 }
 
+.user img:hover {
+  border: 0.2px solid #003ecb;
+  transform: scale(1.2);
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-user{
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 4px;
+  margin: 1.5em;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  padding: 10px;
+  margin-inline: 0.25em;
+  color: #222222;
+}
+
+.image img {
+  border-radius: 0.5em;
+  margin-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.username{
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.more-details{
+  display: flex;
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: lighter;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .column {
+  .username{
+    font-size: 10.31pt;
+  }
+  .more-details{
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+  }
+  .row{
+    justify-content: center;
+  }
+  .image {
     flex: 100%;
-    max-width: 90%;
+    max-width: 100%;
   }
   .search{
     flex: 100%;
@@ -121,7 +186,6 @@ ul.foolist li {
   .navbar{
     font-size: 8pt;
     font-weight: bold;
-    
   }
   .upload{
     font-size: 8pt;
