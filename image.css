@@ -19,7 +19,7 @@ body {
 ul.list {        
     display: flex;
     align-items: center;
-    
+    list-style-type: none;
 }
 
 ul.list li {
@@ -80,7 +80,7 @@ ul.list li {
 ul.foolist {        
   display: flex;
   align-items: center;
-  
+  list-style-type: none;
 }
 
 ul.foolist li {
@@ -99,7 +99,7 @@ ul.foolist li {
 
 .user img {
   border-radius: 50%;
-  width: 100%;
+  width: 30px;
   height: auto;
   vertical-align: middle;
 }
@@ -225,6 +225,7 @@ ul.foolist li {
 
 a {
   color: #222222;
+  text-decoration: none;
 }
 a:hover{
   color: #003ecb;
@@ -232,6 +233,7 @@ a:hover{
 
 a.f{
   color: white;
+  text-decoration: none;
 }
 a:hover.f{
   color: orange;

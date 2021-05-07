@@ -18,6 +18,7 @@ body {
 ul.list {        
     display: flex;
     align-items: center;
+    list-style-type: none;
 }
 
 ul.list li {
@@ -78,7 +79,7 @@ border: 0.1em solid #003ecb;
 ul.foolist {        
   display: flex;
   align-items: center;
-  
+  list-style-type: none;
 }
 
 ul.foolist li {
@@ -97,7 +98,7 @@ ul.foolist li {
 
 .user img {
   border-radius: 50%;
-  width: 100%;
+  width: 30px;
   height: auto;
   vertical-align: middle;
 }
@@ -133,9 +134,7 @@ ul.foolist li {
 }
 
 .column img:hover {
-  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.3);
-  transform: scale(0.99);
-  /* cursor: pointer; */
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
   }
 
 
@@ -194,6 +193,7 @@ ul.foolist li {
 
 a {
   color: #222222;
+  text-decoration: none;
 }
 a:hover{
   color: #003ecb;
@@ -201,6 +201,7 @@ a:hover{
 
 a.f{
   color: white;
+  text-decoration: none;
 }
 a:hover.f{
   color: orange;
